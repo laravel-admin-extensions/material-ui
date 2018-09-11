@@ -29,7 +29,6 @@ class MaterialUIServiceProvider extends ServiceProvider
             $vendor_path.'MaterialAdminLTE/dist/css/ripples.min.css',
             $vendor_path.'MaterialAdminLTE/dist/css/MaterialAdminLTE.min.css',
             $vendor_path.'MaterialAdminLTE/dist/css/skins/all-md-skins.min.css',
-            $vendor_path.'MaterialAdminLTE/dist/css/laravel-admin-custom.css'
         ];
 
         $js = [
