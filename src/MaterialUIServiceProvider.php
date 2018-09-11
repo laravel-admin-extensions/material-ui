@@ -16,22 +16,29 @@ class MaterialUIServiceProvider extends ServiceProvider
             return;
         }
 
+        $vendor_path = 'vendor/laravel-admin-ext/material-ui/';
         if ($this->app->runningInConsole() && $assets = $extension->assets()) {
             $this->publishes(
-                [$assets => public_path('vendor/laravel-admin-ext/material-ui')],
+                [$assets => public_path($vendor_path)],
                 'laravel-admin-material-ui'
             );
         }
 
+        $css = [
+            $vendor_path.'MaterialAdminLTE/dist/css/bootstrap-material-design.min.css',
+            $vendor_path.'MaterialAdminLTE/dist/css/ripples.min.css',
+            $vendor_path.'MaterialAdminLTE/dist/css/MaterialAdminLTE.min.css',
+            $vendor_path.'MaterialAdminLTE/dist/css/skins/all-md-skins.min.css',
+            $vendor_path.'MaterialAdminLTE/dist/css/laravel-admin-custom.css'
+        ];
 
-        Admin::css('/vendor/laravel-admin-ext/material-ui/MaterialAdminLTE/dist/css/bootstrap-material-design.min.css');
-        Admin::css('/vendor/laravel-admin-ext/material-ui/MaterialAdminLTE/dist/css/ripples.min.css');
-        Admin::css('/vendor/laravel-admin-ext/material-ui/MaterialAdminLTE/dist/css/MaterialAdminLTE.min.css');
-        Admin::css('/vendor/laravel-admin-ext/material-ui/MaterialAdminLTE/dist/css/skins/all-md-skins.min.css');
-        Admin::css('/vendor/laravel-admin-ext/material-ui/MaterialAdminLTE/dist/css/laravel-admin-custom.css');
-        Admin::js('/vendor/laravel-admin-ext/material-ui/MaterialAdminLTE/dist/js/material.min.js');
-        Admin::js('/vendor/laravel-admin-ext/material-ui/MaterialAdminLTE/dist/js/ripples.min.js');
+        $js = [
+            $vendor_path.'MaterialAdminLTE/dist/js/material.min.js',
+            $vendor_path.'MaterialAdminLTE/dist/js/ripples.min.js'
+        ];
+
+        Admin::css($css);
+        Admin::js($js);
         Admin::script('$.material.init()');
-
     }
 }
