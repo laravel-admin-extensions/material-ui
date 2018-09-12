@@ -1,47 +1,53 @@
 # Material-UI extension for laravel-admin
 
+Material-UI is a Material Design extension for [laravel-admin](https://github.com/z-song/laravel-admin), using Bootstrap Material Design.
 
-这是一个`laravel-admin`扩展，用来将`laravel-admin`风格切换成 [Material Design](https://material.io/)。
-
-
-## 截图
+## Screenshot
 
 ![wx20180911-143907 2x](https://user-images.githubusercontent.com/2421068/45342669-38c49600-b5d1-11e8-96a9-4dec50e38017.png)
 
-## 安装
+## Requirements
 
-首先，安装依赖：
+laravel-admin >= 1.6.1
+
+## Install
+
+First, install material-ui:
 ```bash
 composer require jxlwqq/material-ui
 ```
 
-然后，发布资源目录：
+Then publish assets files：
+
 ```bash
+
 php artisan vendor:publish --tag=laravel-admin-material-ui
 ```
 
-## 配置
 
-在`config/admin.php`文件的`extensions`，加上属于这个扩展的一些配置
+## Config
+Add `extensions` option in your `config/admin.php` configuration file:
+
 ```php
 'extensions' => [
     'material-ui' => [
-        // 如果要关掉这个扩展，设置为false
+        // If the value is set to false, this extension will be disabled
         'enable' => true
     ]
 ]
 ```
 
-## 使用
+## Use
 
-刷新后台页面即可。
+Just **Refresh** your browser.
 
-## 鸣谢
+
+## Special thanks
 
 * [DucThanhNguyen/MaterialAdminLTE](https://github.com/DucThanhNguyen/MaterialAdminLTE)
+* [FezVrasta/bootstrap-material-design](https://github.com/FezVrasta/bootstrap-material-design)
 
+## License
 
-License
-------------
 Licensed under [The MIT License (MIT)](LICENSE).
 
