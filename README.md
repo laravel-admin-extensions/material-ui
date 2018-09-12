@@ -1,5 +1,7 @@
 # Material-UI extension for laravel-admin
 
+[中文文档](README-CN.md)
+
 Material-UI is a Material Design extension for [laravel-admin](https://github.com/z-song/laravel-admin), using Bootstrap Material Design.
 
 ## Screenshot
@@ -8,9 +10,9 @@ Material-UI is a Material Design extension for [laravel-admin](https://github.co
 
 ## Requirements
 
-laravel-admin >= 1.6.1
+* laravel-admin >= 1.6.1
 
-## Install
+## Installation
 
 First, install material-ui:
 ```bash
@@ -25,7 +27,8 @@ php artisan vendor:publish --tag=laravel-admin-material-ui
 ```
 
 
-## Config
+## Configurations
+
 Add `extensions` option in your `config/admin.php` configuration file:
 
 ```php
