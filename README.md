@@ -1,5 +1,7 @@
 # Material-UI extension for laravel-admin
 
+> 本拓展暂不可用，需要等待 Laravel-admin 发布 1.6.1 或更高的版本。
+
 [中文文档](README-CN.md)
 
 Material-UI is a Material Design extension for [laravel-admin](https://github.com/z-song/laravel-admin), using Bootstrap Material Design.
