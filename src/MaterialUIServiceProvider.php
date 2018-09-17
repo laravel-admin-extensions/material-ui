@@ -27,20 +27,14 @@ class MaterialUIServiceProvider extends ServiceProvider
 
         Admin::booting(function () use($vendor_path) {
             $skin = str_replace('skin', 'skin-md', config('admin.skin'));
-            $css = [
-                $vendor_path.'MaterialAdminLTE/dist/css/bootstrap-material-design.min.css',
+
+            array_push(Admin::$baseCss, $vendor_path.'MaterialAdminLTE/dist/css/bootstrap-material-design.min.css',
                 $vendor_path.'MaterialAdminLTE/dist/css/ripples.min.css',
                 $vendor_path.'MaterialAdminLTE/dist/css/MaterialAdminLTE.min.css',
-                $vendor_path.'MaterialAdminLTE/dist/css/skins/'.$skin.'.min.css',
-            ];
+                $vendor_path.'MaterialAdminLTE/dist/css/skins/'.$skin.'.min.css');
+            array_push(Admin::$baseJs, $vendor_path.'MaterialAdminLTE/dist/js/material.min.js',
+                $vendor_path.'MaterialAdminLTE/dist/js/ripples.min.js');
 
-            $js = [
-                $vendor_path.'MaterialAdminLTE/dist/js/material.min.js',
-                $vendor_path.'MaterialAdminLTE/dist/js/ripples.min.js'
-            ];
-
-            Admin::css($css);
-            Admin::js($js);
             Admin::script('$.material.init()');
         });
 
