@@ -6,7 +6,7 @@ Material-UI is a Material Design extension for [laravel-admin](https://github.co
 
 ## Screenshot
 
-![wx20180911-143907 2x](https://user-images.githubusercontent.com/2421068/45342669-38c49600-b5d1-11e8-96a9-4dec50e38017.png)
+![screenshot](https://user-images.githubusercontent.com/2421068/46601090-b7541b00-cb1e-11e8-8cc3-f1a14589ff68.png)
 
 ## Requirements
 
