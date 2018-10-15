@@ -44,6 +44,9 @@ Add `extensions` option in your `config/admin.php` configuration file:
 
 Just **Refresh** your browser.
 
+## More resources
+
+[Awesome Laravel-admin](https://github.com/jxlwqq/awesome-laravel-admin)
 
 ## Special thanks
 
