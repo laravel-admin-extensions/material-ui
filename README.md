@@ -14,18 +14,17 @@ Material-UI is a Material Design extension for [laravel-admin](https://github.co
 
 ## Installation
 
-First, install material-ui:
 ```bash
 composer require jxlwqq/material-ui
-```
-
-Then publish assets files：
-
-```bash
-
 php artisan vendor:publish --tag=laravel-admin-material-ui
 ```
 
+## Update
+
+```bash
+composer update jxlwqq/material-ui
+php artisan vendor:publish --tag=laravel-admin-material-ui --force
+```
 
 ## Configurations
 
