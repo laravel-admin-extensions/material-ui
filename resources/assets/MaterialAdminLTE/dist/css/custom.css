@@ -17,3 +17,11 @@
 .form-horizontal label {
     margin-top: 10px;
 }
+
+.checkbox .checkbox-material, label.checkbox-inline .checkbox-material {
+    display: none;
+}
+
+.radio .circle, label.radio-inline .circle {
+    display: none;
+}
