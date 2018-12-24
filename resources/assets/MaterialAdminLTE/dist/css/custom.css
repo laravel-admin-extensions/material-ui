@@ -25,3 +25,7 @@
 .radio .circle, label.radio-inline .circle {
     display: none;
 }
+
+.iconpicker .iconpicker-items {
+    color: #aaaaaa;
+}
