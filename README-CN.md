@@ -14,14 +14,16 @@ laravel-admin >= 1.6.1
 
 ## 安装
 
-首先，安装依赖：
 ```bash
 composer require jxlwqq/material-ui
+php artisan vendor:publish --tag=laravel-admin-material-ui
 ```
 
-然后，发布资源目录：
+## 更新
+
 ```bash
-php artisan vendor:publish --tag=laravel-admin-material-ui
+composer update jxlwqq/material-ui
+php artisan vendor:publish --tag=laravel-admin-material-ui --force
 ```
 
 ## 配置
@@ -38,7 +40,11 @@ php artisan vendor:publish --tag=laravel-admin-material-ui
 
 ## 使用
 
-刷新后台页面即可。
+**刷新**后台页面即可。
+
+## 更多精选资源
+
+[Awesome Laravel-admin](https://github.com/jxlwqq/awesome-laravel-admin)
 
 ## 鸣谢
 
