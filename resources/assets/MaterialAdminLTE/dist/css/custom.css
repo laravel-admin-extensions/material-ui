@@ -29,3 +29,7 @@
 .iconpicker .iconpicker-items {
     color: #aaaaaa;
 }
+
+.btn, .input-group-btn .btn {
+    margin: 0;
+}
